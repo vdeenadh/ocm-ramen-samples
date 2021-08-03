@@ -4,6 +4,8 @@ kind: DRPolicy
 metadata:
   name: dr-policy
 spec:
-  clusterNames:
-  - hub
-  - cluster1
+  drClusterSet:
+    - managedClusterName: hub
+      s3ProfileName: minio-on-hub
+    - managedClusterName: cluster1
+      s3ProfileName: minio-on-hub
