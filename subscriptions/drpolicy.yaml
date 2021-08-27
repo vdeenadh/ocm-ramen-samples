@@ -5,8 +5,8 @@ metadata:
   name: dr-policy
 spec:
   drClusterSet:
-  - name: hub
+  - name: east
     s3ProfileName: minio-on-hub
-  - name: cluster1
+  - name: west
     s3ProfileName: minio-on-hub
   schedulingInterval: 1m
